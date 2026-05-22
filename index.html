@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+</head>
+<style>
+	*{
+		margin: 0;
+		font-family: sans-serif;
+		box-sizing: border-box;
+	}
+	body{
+		background: #fdfff5;
+	}
+	/*navigation bar*/
+	.navbar{
+		padding: 0px 15px;
+		background: #36454F;
+		text-align: center;
+	}
+	.logo{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				width: 50px;
+				padding: 20px;
+				border-radius: 50%;
+				color:  #E6E6Fa;
+				cursor: pointer;
+				
+			}
+			span b{
+				text-decoration: none;
+				color: #fff;
+				display: inline-block;
+				padding: 8px 12px;
+			}
+			span b:hover{
+				color: #fff;
+				background-color: #333;
+				border-radius: 5px;
+			}
+			.button_right{
+				position: absolute;
+				right: 20px;
+				top: 15px;
+				color: #E6E6Fa;
+			}
+			.form{
+				max-width: 100%;
+				padding:10px 60px;
+				margin:20px;
+				background:#36454F;
+				color:#E6E6Fa;
+
+			
+			}
+			.sub{
+				max-width: 100%;
+				padding:10px 60px;
+				margin:20px;
+				border:1px solid #ccc;
+				background: #E6E6Fa;
+				color: #B56B1D;
+			}
+			.but{
+				width:30%;
+				border: 1px solid #36454F;
+				background:  #B56B1D;
+				color: #FFF;
+				cursor: pointer;
+
+			}
+			.but{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+			}
+			.but:hover{
+				color: #B56B1D;
+				background-color: #fdfff5;
+				border-radius: 5px;
+			}
+ .side_nav{
+ 	background: #36454F;
+ 	height: 100vh;
+ 	position: absolute;
+ 	width: 250px;
+ 	display: none;
+ 	overflow: auto;
+ }
+ .side_nav a{
+ 	color: #B56B1D;
+ 	display: block;
+ 	padding: 20px 30px;
+ 	text-decoration: none;
+ 	border: 1px solid #fdfff5;
+ }
+</style>
+<body>
+	<!--navigation bar-->
+	<div class="navbar">
+	<span class="logo" onclick="toggle_nav()">
+		<b id="popup">&#9776;</b>
+	</span>
+	<span class="button_right">LOGO		
+	</span>
+</div>
+
+<!-- side nav -->
+<div class="side_nav" id="side_nav">
+	<a href=""><i class="fa fa-home">&nbsp;HOME</i></a>
+	<a href="services.html"><i class="fa fa-gear">&nbsp;SERVICES</i></a>
+	<a href="contact.html"><i class="fa fa-envelope">&nbsp;CONTACT</i></a>
+	<a href=""><i class="fa fa-user">&nbsp;USER</i></a>
+	<a href=""><i class="fa fa-power-off">&nbsp;SIGNOUT</i></a>
+</div>
+<center>
+	<div class="form">
+		<h3>Hello There, Welcome To My Portfolio</h3>
+	<div class="sub"> 
+		<h3>  My Name Is Jasper, And This Is My Welcome Page To My Site.</h3> <br> <p> It's awesome to have you here. I've put a lot of heart into this space, and I'm super excited to share it with you. Hope you find something that sparks your interest or makes you smile!</p>
+	</div>
+		<button class="but">
+			<a href="services.html">VIEW MY WORK</a></button>
+		</div>
+    </center>
+	</div>
+	<script>
+		let side_nav = document.getElementById("side_nav");
+		function toggle_nav() {
+			if (side_nav.style.display === "none"){
+              side_nav.style.display = "block"; 
+			}else{
+					side_nav.style.display = "none";
+				}
+			}
+	</script>
+
+		
+
+
+</body>
+</html>
