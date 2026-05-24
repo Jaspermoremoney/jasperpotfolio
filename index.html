@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=100%">
+	<meta name="viewport" content="width=device-width, initial-scale=100">
 	<title> </title>
 </head>
 <style>
@@ -51,10 +51,12 @@
 			}
 			.form{
 				max-width: 100%;
-				padding:10px 60px;
-				margin:20px;
-				background:#36454F;
-				color:#E6E6Fa;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background-color: #36454F;
+				border-spacing: 40px;
+				color: #E6E6Fa;
 
 			
 			}
@@ -64,14 +66,15 @@
 				margin:20px;
 				border:1px solid #ccc;
 				background: #E6E6Fa;
-				color: #B56B1D;
+				color: #000000;
 			}
 			.but{
 				width:30%;
 				border: 1px solid #36454F;
-				background:  #B56B1D;
+				background:  #E6E6Fa;
 				color: #FFF;
 				cursor: pointer;
+				border-radius: 30px;
 
 			}
 			.but{
@@ -82,8 +85,8 @@
 			}
 			.but:hover{
 				color: #B56B1D;
-				background-color: #fdfff5;
-				border-radius: 5px;
+				background-color: #000000;
+				border-radius: 30px;
 			}
  .side_nav{
  	background: #36454F;
@@ -100,6 +103,113 @@
  	text-decoration: none;
  	border: 1px solid #fdfff5;
  }
+ .featured{
+				max-width: 100%;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background-color: #36454F;
+				border-spacing: 40px;
+				color: #E6E6Fa;
+
+			}
+			.parent{
+				display: flex;
+				flex-direction: row;
+				padding: 20px;
+				grid-template-columns: repeat(2, 1fr) ;
+				gap: 40px;
+			}
+			.child{
+				max-width: 30%;
+				margin-bottom: 20px;
+				color: #000000;
+				background:#E6E6Fa;
+				border: 2px solid #ae81ff;
+				margin-top: 20px;
+				padding: 20px;
+				margin-bottom: 20px;
+				
+			}
+			.but_1{
+				width:30%;
+				border: 1px solid #000000;
+				background:  #E6E6Fa;
+				color: #FFF;
+				cursor: pointer;
+				padding: 0px 20px 10px;
+				gap: 20px;
+			}
+			.but_1{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+			}
+			.but_1:hover{
+				color: #fdfff5;
+				background-color:#36454F;
+				border-radius: 5px;
+			}
+			.form_1{
+				max-width: 100%;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background-color: #36454F;
+				border-spacing: 40px;
+				color: #E6E6Fa;
+			}
+			.but_2{
+				width:30%;
+				border: 1px solid #36454F;
+				background:#E6E6Fa;
+				color: #FFF;
+				cursor: pointer;
+				border-radius: 30px;
+			}
+			.but_2{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+			}
+			.but_2:hover{
+				color: #B56B1D;
+				background-color: #000000;
+				border-radius: 30px;	
+			}
+			.form_2{
+				max-width: 100%;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background-color: #36454F;
+				border-spacing: 40px;
+				color: #E6E6Fa;
+			}
+			.but_3{
+				width:30%;
+				border: 1px solid #36454F;
+				background: #E6E6Fa;
+				color: #FFF;
+				cursor: pointer;
+				border-radius: 30px;
+			}
+			.but_3{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+			}
+			.but_3:hover{
+				color: #B56B1D;
+				background-color: #000000;
+				border-radius: 30px;	
+			}
+
+
+
 </style>
 <body>
 	<!--navigation bar-->
@@ -113,7 +223,7 @@
 
 <!-- side nav -->
 <div class="side_nav" id="side_nav">
-	<a href=""><i class="fa fa-home">&nbsp;HOME</i></a>
+	<a href="index.html"><i class="fa fa-home">&nbsp;HOME</i></a>
 	<a href="services.html"><i class="fa fa-gear">&nbsp;SERVICES</i></a>
 	<a href="contact.html"><i class="fa fa-envelope">&nbsp;CONTACT</i></a>
 	<a href=""><i class="fa fa-user">&nbsp;USER</i></a>
@@ -126,9 +236,61 @@
 		<h3>  My Name Is Jasper, And This Is My Welcome Page To My Site.</h3> <br> <p> It's awesome to have you here. I've put a lot of heart into this space, and I'm super excited to share it with you. Hope you find something that sparks your interest or makes you smile!</p>
 	</div>
 		<button class="but">
-			<a href="services.html">VIEW MY WORK</a></button>
-		</div>
+			<a href="contact.html">VIEW MY WORK</a></button>
+		</div>	
     </center>
+    <div class="featured">	
+<h3>FEATURED PROJECTS</h3>
+<div class="parent">
+	<div class="child">
+		<h4>booking page</h4><br>
+		<p>in this section you can ask for to book any of our services which also includes consultant and labour services</p>
+		<br><br><br>
+		<center>
+		<button class="but_1">
+			<a href="#">book services</a></button>
+			</center>
+	</div>
+	<div class="child">
+		<h4>tractors and equipments for hire</h4><br>
+		<p> right here you can order and book any of our tractors and equipment for rent,sale and lease. we also have great drivers, operators and technician for each equipments</p>
+		<br><br>
+		<center>
+		<button class="but_1">
+			<a href="#">book services</a></button>
+			</center>
+	</div>
+	<div class="child">
+		<h4>construction expertise and consultants</h4><br>
+		<p>we also have the right speacialist and technician for any of your construction projects and buildings, we aalso have a good number of industrail and production engineers for consultation and hire.</p>
+		<br>
+		<center>
+		<button class="but_1">
+			<a href="#">book services</a></button>
+		</center>
+	</div>
+</div></div>
+<div class="form_1">
+	<img src="photo.jpg" width="300" height="300">
+	<br><br><br>
+	<h2>ABOUT ME</h2>
+	<p3>My Name Is Jasper And I Am A Graduate Of Industral And Production Engineering From The University Of Ambrose Ali University Ekpoma, I Am Also Into Machine Engineering And An Expert In Machine Operation, But Most Of All I`m A Man Navigating Through Life And The Challenges Put On A Man. I Am Very Trustworthy And Serious With My Work, So I Indulge You To Work With Us</p3>
+	<br><br>
+	<button class="but_2">
+		<a href="#">LEARN MORE</a></button>
+</div>
+<center>
+<div class="form_2">
+	
+	<h1> Ready To Work Together?</h1>
+	<p1>get in touch and let`s create something amazing</p1>
+	<br><br>
+	<button class="but_3">
+		<a href="#">Start A Project</a></button>
+	</center>
+	</div>
+</div>
+
 	</div>
 	<script>
 		let side_nav = document.getElementById("side_nav");
