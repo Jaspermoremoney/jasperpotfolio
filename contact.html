@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MOVIE DOWNLOAD WEBSITE/LANDING PAGE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> CONTACT PAGE</title>
 </head>
 <style>
 	*{
@@ -12,122 +12,227 @@
 		box-sizing: border-box;
 	}
 	body{
-		background: #C6C3B5;
+	background: linear-gradient(45deg, #333, #36454F);;
 	}
-	/* navigation bar*/
+	button{
+		border: 0;
+	}
+	/*navigation bar*/
 	.navbar{
-		padding: 20px 30px;
-		background:#36454F;
+		padding: 0px 15px;
+		background: linear-gradient(45deg, #36454F, #000000);
 		text-align: center;
-	}
-	.right_nav{
-		float: right;
+
 	}
 	.logo{
-		float: left;
-	}
-	.navbar a{
-		color: #ae81ff;
-		text-decoration: none;
-		margin: 0 15px;
-		}
-	.navbar a:hover{
-		color: #000;
-		background: #fff;
-	}
-	
-	.form{
-				max-width: 100%;
-				padding:10px 60px;
-				margin:20px;
-				background:#36454F;
-				color:#ae81ff;
-
-			
-			}
-			.sub{
-				max-width: 100%;
-				padding:10px 60px;
-				margin:20px;
-				border:1px solid #ccc;
-				background: #E6E6Fa;
-				color: #B56B1D;
-			}
-			.child{
-				max-width:30%;
-				color: #ae81ff;
 				display: flex;
-				flex-direction:column;
-				margin-bottom: 20px;
-				float: left;
-				background:#36454F;
-				border-box:#000;
-				border: 2px solid #B56B1D;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				width: 50px;
+				padding: 20px;
+				border-radius: 50%;
+				color:  #E6E6Fa;
+				cursor: pointer;
+				
+			}
+			span b{
+				text-decoration: none;
+				color: #fff;
+				display: inline-block;
+				padding: 8px 12px;
+			}
+			span b:hover{
+				color: #fff;
+				background-color: #333;
+				border-radius: 5px;
+			}
+			.button_right{
+				position: absolute;
+				right: 20px;
+				top: 15px;
+				color: #E6E6Fa;
+			}
+			.side_nav{
+ 	background: linear-gradient(45deg, #36454F, #000000);
+ 	height: 100vh;
+ 	position: absolute;
+ 	width: 250px;
+ 	display: none;
+ 	overflow: auto;
+ }
+ .side_nav a{
+ 	color: #B56B1D;
+ 	display: block;
+ 	padding: 20px 30px;
+ 	text-decoration: none;
+ 	border: 1px solid #fdfff5;
+ }	
+ .form{
+				padding: 10px 20px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background-color:#E6E6Fa;
+				border-spacing: 100	px;
+				color: #000000;
+			}
+			.form_1{
+				color: #E6E6Fa;
+				text-decoration: underline;
+				margin: 0px 10px;
+			}
+			.input{
+				display: block;
+	width: 100%;
+	padding: 20px 20px;
+	background: #fff;
+	border-radius: 12px;
+	margin: 20px 0;
+	
+			}
+			.input_2{
+				display: block;
+	width: 100%;
+	padding: 50px 20px;
+	background: #fff;
+	border-radius: 12px;
+	margin: 20px 0;
+			}
+			.form_2{
+				display: grid;
+				padding: 20px;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+				gap: 20px;
+				color: #000000;
+				}			
+			.box{
+				border: 5px solid #000000 ;
+				padding:10px 20 px;
+				margin:20px 20px;
+				display: block;
+				grid-template-columns: repeat(3, 1fr) ;
+				background-color: #E6E6Fa;
+				border-radius: 10px;
+			}
+			.but{
+				/*border: 1px solid #36454F;*/
+				background:#E6E6Fa;
+				color: #FFF;
+				cursor: pointer;
+				margin: 50px 0 0 0;
 				border-radius: 30px;
-				margin-right: 20px;
-				text-shadow: 2px 3px 3px;
+				text-decoration: none;
 			}
-			.child_1{
-				float: center;
-				max-width: 50%;
-				color: #ae81ff;
-				background:#36454F;
-				border: 2px solid #B56B1D;
+			.but a{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+ 
 			}
-
-
+			.but:hover{
+				color: #B56B1D;
+				background-color:#000000;
+				border-radius: 30px;
+				text-decoration: none;	
+			}
+			.but:hover *{
+				color: #fff;
+			}
+			.form_3{
+				background-color: linear-gradient(60deg, #fff, #B56B1D);
+				color: #fff;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+			}
+				
 </style>
 <body>
-<!--navigation bar-->
-<nav class="navbar">
-	<span>
-		<a href="#"class="logo">LOGO</a>
-		<a href="#">Home</a>
+	<!--navigation bar-->
+	<div class="navbar">
+	<span class="logo" onclick="toggle_nav()">
+		<b id="popup">&#9776;</b>
 	</span>
-	<span>
-	<a href="#">Services</a>
-	<a href="#">How It Works</a>
-	<a href="#">Become A Provider</a>
-	<a href="#">About Us</a>
-</span>
-  <span class="right_nav">
-  	<a href="#">Login</a>
-  	<a href="#">Signup</a>
-  </span>
-  </div>
-</nav>
-<center>
-  <div class="form">
-		<h3>Hello There, Welcome To My Page</h3>
-	<div class="sub"> 
-		<h3>  My Name Is Jasper, And This Is My Welcome Page To My Site.</h3> <br> <p> It's awesome to have you here. I've put a lot of heart into this space, and I'm super excited to share it with you. Hope you find something that sparks your interest or makes you smile!</p>
-	</div>
-	</center>
+	<span class="button_right">LOGO		
+	</span>
 </div>
 
-<div class="parent">
-	<div class="child">
-			<img src="images777.jpg" width="300" height="100">
-			<br><br>
-			<h3>DESCRIPTION OF OUR MOVIE PAGE</h3>
-			<h3> Prepare to be captivated, enthralled, and utterly immersed in the boundless world of cinema. Our platform is meticulously crafted for the true movie lover, offering an unparalleled gateway into the art, the craft, and the sheer magic of filmmaking. We go beyond simple listings, providing a rich tapestry of content designed to deepen your appreciation and expand your cinematic horizons. From the golden age of Hollywood to the cutting edge of independent cinema, and from blockbuster epics that redefine spectacle to intimate dramas that speak to the soul, every genre, every era, and every style finds its home here.</h3>
-<p> We believe cinema is a shared experience, and our platform fosters a vibrant community where fans can connect, debate, and celebrate their mutual love for storytelling on screen. Join us, and let the show begin.</p>
+<!-- side nav -->
+<div class="side_nav" id="side_nav">
+	<a href="index.html"><i class="fa fa-home">&nbsp;HOME</i></a>
+	<a href="services.html"><i class="fa fa-gear">&nbsp;SERVICES</i></a>
+	<a href="contact.html"><i class="fa fa-envelope">&nbsp;CONTACT</i></a>
 </div>
-<div class="child_1"></div>
-	<img src="photo.jpg" width="100" height="100">
+	</div>
+	<center>
+	<div class="form">
+		<h1>GET IN TOUCH</h1>
+		<p>Have A Project In Mind? Let`s Talk About It.</p>
+		</center>
+	</div>	
 	<br><br>
-	<h3> DESCRIPTION OF OUR MUSIC PAGE</h3>
-	<h3>Welcome to your ultimate music destination! Dive into an expansive library of tracks spanning every genre imaginable. Whether you're searching for the latest chart-toppers, timeless classics, or hidden indie gems, you'll find it all here. Our platform offers a seamless downloading experience, ensuring you get your favorite songs in high quality, quickly and easily. Create your personalized playlists, discover new artists, and build a music collection that's uniquely yours. Start exploring and downloading the soundtrack to your life today!</h3>
-</div>
-
-
-
+	<div class="form_1">
+		<h1>Send Me A Message</h1>
+		<br><br>
+		<p>FULL NAME</p>
 	</div>
-
+	<div class="input">
 	</div>
-
+	<div class="form_1">
+		<p> Email Address</p>
+	</div>
+	<div class="input"></div>
+	<div class="form_1">
+		<p> Subject</p>
+		<div class="input"></div>
+		<div class="form_1">
+			<p>Message</p>
+		</div>
+		<div class="input_2"></div>
+		<center>
+	<button class="but">
+		<a href="#">LEARN MORE</a></button>
+		</center>
+		<br><br>
+	    
+	 <div class="form_2">
+	 	<h2> Other Ways To Reach Me</h2>
+	 	<div class="box">
+			<h3>EMAIL</h3>
+			<p> Jasperslime@gmail.com</p>
+			<p> response within 24hours</p>
+		</div>
+		<div class="box">
+			<h3>PHONE NUMBER</h3>
+			<p>08105167479</p>
+		</div>
+<div class="box">
+	<h3>SOCIAL MEDIA PLATFORM</h3>
+	<p>TWITTER-@DIARYOFASLIME.</p>
+	<p>IMSTAGRAM-@SHADY_TIMELINE</p>
+	<p>WHATSAPP-09036363267</p>
+	<p>For Daily Updates</p>
 </div>
+	</div>
+	<div class="form_3">
+		<h2> Typically Respond Within 24Hours</h2>
+		<p>FOR URGENT MATTERS, PLEASE CALL DIRECTLY OR MESSAGE ON SOCIAL MEDIA</p> 
+	</div>
+	 </div>
+	<script>
+		let side_nav = document.getElementById("side_nav");
+		function toggle_nav() {
+			if (side_nav.style.display === "none"){
+              side_nav.style.display = "block"; 
+			}else{
+					side_nav.style.display = "none";
+				}
+			}
+	</script>
 
- 	
+		
+
+
 </body>
 </html>
