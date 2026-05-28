@@ -1,7 +1,344 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JASPER ENGINEERING SERVICES PAGE</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		font-family: sans-serif;
+		box-sizing: border-box;
+	}
+	/*navigation bar*/
+	.navbar{
+		padding: 0px 15px;
+	background: linear-gradient(45deg, #36454F, #000000);
+		text-align: center;
+	}
+	.logo{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 50px;
+				width: 50px;
+				padding: 20px;
+				border-radius: 50%;
+				color:  #E6E6Fa;
+				cursor: pointer;
+				
+			}
+			span b{
+				text-decoration: none;
+				color: #fff;
+				display: inline-block;
+				padding: 8px 12px;
+			}
+			span b:hover{
+				color: #fff;
+				background-color: #333;
+				border-radius: 5px;
+			}
+			.side_nav{
+ 	background: #36454F;
+ 	height: 100vh;
+ 	position: absolute;
+ 	width: 250px;
+ 	display: none;
+ 	overflow: auto;
+ }
+ .side_nav a{
+ 	color: #B56B1D;
+ 	display: block;
+ 	padding: 20px 30px;
+ 	text-decoration: none;
+ 	border: 1px solid #fdfff5;
+ }
+ .form{
+				max-width: 100%;
+				padding:10px 60px;
+				margin:20px;
+				background: linear-gradient(45deg, #36454F, #000000);
+				color:#fff;
+				border: 2px solid #ae81ff;
+			}
+			.form_1{
+				max-width: 100%;
+				padding:10px 60px;
+				margin:20px;
+				background: linear-gradient(45deg, #36454F, #000000);
+				color:#fff;
+				border: 2px solid #ae81ff;
+			}
+			.sub{
+				max-width: 100%;
+				padding:10px 60px;
+				margin:20px;
+				border:1px solid #ccc;
+				background: #E6E6Fa;
+				color: #000000;
+			}
+			.featured{
+				max-width: 100%;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background: linear-gradient(45deg, #36454F, #000000);
+				border-spacing: 40px;
+				color: #fdfff5;
+				line-height: 30px;
+				text-align: justify;
+
+			}
+			.parent{
+					display: grid;
+				padding: 20px;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+				gap: 40px;
+			
+			}
+			.child{
+				margin-bottom: 20px;
+				color: #000000;
+				background:#E6E6Fa;
+				border: 2px solid #ae81ff;
+				margin-top: 20px;
+				padding: 20px;
+				margin-bottom: 20px;
+				
+			}
+			.child_1{
+				max-width: 30%;
+				margin-bottom: 20px;
+				color: #000000;
+				background:#E6E6Fa;
+				border: 2px solid #ae81ff;
+				margin-top: 20px;
+				padding: 20px;
+				margin-bottom: 20px;
+				
+			}
+			.parent_1{
+				display: flex;
+				flex-direction: row;
+				padding: 20px;
+				grid-template-columns: repeat(2, 1fr) ;
+				gap: 400px;
+			}
+			.section_1{
+				margin-bottom: 20px;
+				color: #000000;
+				background:#E6E6Fa;
+				border: 2px solid #ae81ff;
+				margin-top: 20px;
+				padding: 20px;
+				margin-bottom: 20px;
+				line-height: 30px;
+				text-align: justify;
+				
+			}
+			.form_2{
+				display: grid;
+				padding: 20px;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+				gap: 20px;
+			}
+			.box{
+				border: 5px solid #000000 ;
+				padding:10px 20 px;
+				margin:20px 20px;
+				display: block;
+				grid-template-columns: repeat(3, 1fr) ;
+				background-color: #E6E6Fa;
+				border-radius: 10px;
+			}
+
+
+			.but_1{
+				border: 1px solid #000000;
+				background:  #E6E6Fa;
+				color: #FFF;
+				cursor: pointer;
+				padding: 0px 20px 10px;
+				gap: 20px;
+			}
+			.but_1{
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+				padding: 10px 12px;
+			}
+			.but_1:hover{
+				color: #fdfff5;
+				background-color: #000000;
+				border-radius: 5px;
+			}
+			.form_3{
+				max-width: 100%;
+				padding: 10px 30px;
+				margin: 20px;
+				border: 2px solid #000000;
+				background: linear-gradient(45deg, #36454F, #000000);
+				border-spacing: 40px;
+				color: #E6E6Fa;
+			}
+			.but_3{
+				width:30%;
+				border: 1px solid #36454F;
+				background: #E6E6Fa;
+				color: #000000;
+				cursor: pointer;
+				border-radius: 30px;
+				text-decoration: none;
+			}
+			.but_3{
+				color: #000000;
+				display: inline-block;
+				padding: 10px 12px;
+				text-decoration: none;
+			}
+			.but_3 a{
+				text-decoration: none;
+
+			}
+			.but_3:hover{
+				color: #B56B1D;
+				background-color: #000000;
+				border-radius: 30px;
+				text-decoration: none;
+			}
+			.but_3:hover *{
+				color: #fff;
+			}
+</style>
+<body>
+<!--navigation bar-->
+	<div class="navbar">
+	<span class="logo" onclick="toggle_nav()">
+		<b id="popup">&#9776;</b>
+	</span>
+	<span class="button_right">LOGO		
+	</span>
+</div>
+
+<!-- side nav -->
+<div class="side_nav" id="side_nav">
+	<a href="index.html"><i class="fa fa-home">&nbsp;HOME</i></a>
+	<a href="services.html"><i class="fa fa-gear">&nbsp;SERVICES</i></a>
+	<a href="contact.html"><i class="fa fa-envelope">&nbsp;CONTACT</i></a>
+	</div>
+<center>
+	 <div class="form">
+		<h3>SERVICES & EXPERTISE</h3>
+	<div class="sub"> 
+		<h4>WHAT CAN I HELP YOU WITH</h4>
+		<br><br><br>
+	</div>
+
+</center>
+<div class="featured">	
+<h3>CORE SERVICES </h3>
+<div class="parent">
+	<div class="child">
+		<img src="bookz.jpeg"width="100%" height="300">
+		<h4>booking page</h4><br>
+		<p>in this section you can ask for to book any of our services which also includes consultant and labour services</p>
+		<br><br>
+		<center>
+		<button class="but_1">
+			<a href="contact.html">LEARN MORE</a></button>
+		</center>
+	</div>
+	<div class="child">
+		<img src="ruddddd.jpg"width="100%" height="300">
+		<h4>tractors and equipments for hire</h4><br>
+		<p> right here you can order and book any of our tractors and equipment for rent,sale and lease. we also have great drivers, operators and technician for each equipments</p>
+		<br>
+		<center>
+		<button class="but_1">
+			<a href="contact.html">LEARN MORE</a></button>
+			</center>
+	</div>
+	<div class="child">
+		<img src="zz.jpeg"width="100%" height="300">
+		<h4>construction expertise and consultants</h4><br>
+		<p>we also have the right speacialist and technician for any of your construction projects and buildings, we aalso have a good number of industrail and production engineers for consultation and hire.</p>
+		<br>
+		<center>
+		<button class="but_1">
+			<a href="contact.html">LEARN MORE</a></button>
+			</center>
+	</div>
+</div></div>
+<div class="form_1">
+	<h2>SPECIALIZD SERVICES</h2>
+<div class="parent_1">
+	<div class="section_1">
+		<h2>HIRING AND RENTING OF ENGINEERING EQIUPMENT AND MACHINES</h2>
+		<br>
+		<p>Welcome to our premier platform for engineering machinery and equipment! We specialize in connecting businesses with the tools they need to get the job done right, whether you're looking to hire top-of-the-line equipment for a project or seeking to rent out your own underutilized assets. Our extensive inventory covers a wide range of engineering needs, from heavy construction machinery to specialized tools for intricate projects. We pride ourselves on providing reliable, well-maintained equipment and a seamless rental experience. Our goal is to empower your projects with efficiency and cost-effectiveness, ensuring you have access to the best solutions available in the market. Explore our offerings and discover how we can support your next engineering endeavor</p>
+	</div>
+		<div class="section_1">
+			<h2>CONSTRUCTION AND CONSULTATION</h2>
+			<br>
+			<p>Welcome to our comprehensive hub for all things construction! Whether you're embarking on a new building project or seeking expert guidance, you've come to the right place. We offer a full spectrum of services, from managing complex construction endeavors to providing insightful consultation that ensures your project stays on track, within budget, and meets the highest standards of quality and safety. Our team of seasoned professionals brings a wealth of experience and a commitment to delivering exceptional results. We understand the intricacies of the construction industry and are dedicated to offering tailored solutions that address your unique challenges and aspirations. Dive in and explore how we can help bring your vision to life, building a stronger future together.</p>
+		</div>
+	</div>
+</div>
+	<div class="form_2">
+		<h2>HOW I WORK</h2>
+		<div class="box">
+			<h3>Discovery</h3>
+			<p> understand your goal & needs</p>
+		</div>
+		<div class="box">
+			<h3>STRATEGY</h3>
+			<p>plan the approach and timeline</p>
+		</div>
+<div class="box">
+	<h3>execution</h3>
+	<p>build & deliever the solution</p>
+</div>
+	</div>
+	<center>
+<div class="form_3">
+	
+	<h1> Let`s Discuss Your Project</h1>
+	<p1>get a free consultation to determine the best approach</p1>
+	<br><br>
+	<button class="but_3">
+		<a href="#">Schedule Call</a></button>
+	</center>
+	</div>
+
+</div>
+	<script>
+		let side_nav = document.getElementById("side_nav");
+		function toggle_nav() {
+			if (side_nav.style.display === "none"){
+              side_nav.style.display = "block"; 
+			}else{
+					side_nav.style.display = "none";
+				}
+			}
+	</script>
+
+
+
+	</div>
+
+	</div>
+
+</div>
+
+ 	
+</body>
+</html>
+
+meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MOVIE DOWNLOAD WEBSITE/LANDING PAGE</title>
 </head>
